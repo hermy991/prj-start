@@ -11,22 +11,22 @@
 <div class="row">
   <div class="col-sm">
       <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Receta</th>
-              <th scope="col">Sabor</th>
-              <th scope="col"></th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let rec of receipts; let i = index">
-              <th scope="row">{{rec.name}}</th>
-              <td>{{rec.ranking}}</td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+        <thead>
+          <tr>
+            <th scope="col">Receta</th>
+            <th scope="col">Sabor</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let rec of receipts; let i = index">
+            <th scope="row">{{rec.name}}</th>
+            <td>{{rec.ranking}}</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
   </div>
 </div>
