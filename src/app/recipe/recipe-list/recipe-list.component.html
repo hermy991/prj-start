@@ -20,21 +20,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row">Dulce de calabaza</th>
-              <td>9.7</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">Ensalada de verdura y pasta 'garganelli'</th>
-              <td>7.2</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <th scope="row">Flan de espinacas, acelgas y gambas</th>
-              <td>7.5</td>
+            <tr *ngFor="let rec of receipts; let i = index">
+              <th scope="row">{{rec.name}}</th>
+              <td>{{rec.ranking}}</td>
               <td></td>
               <td></td>
             </tr>
