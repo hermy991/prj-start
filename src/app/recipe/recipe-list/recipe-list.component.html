@@ -20,7 +20,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let rec of receipts; let i = index">
+          <tr *ngFor="let rec of recipes; let i = index" (click)="onRecipeSelected(i)">
             <th scope="row">{{rec.name}}</th>
             <td>{{rec.ranking}}</td>
             <td></td>

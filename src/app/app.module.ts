@@ -9,6 +9,7 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipe/recipe-detail/recipe-detail.component';
 import { RecipeIngredientesComponent } from './recipe/recipe-ingredientes/recipe-ingredientes.component';
+import { DropdownDirective } from './shered/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RecipeIngredientesComponent } from './recipe/recipe-ingredientes/recipe
     RecipeComponent,
     RecipeListComponent,
     RecipeDetailComponent,
-    RecipeIngredientesComponent
+    RecipeIngredientesComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,7 @@
-<p>
-  recipe-detail works!
-</p>
+<div class="row" *ngIf="recipe != undefined">
+  {{recipe.name}}, {{recipe.type}}, {{recipe.ranking}}, {{recipe.imageSource}}
+</div>
+<div class="row">
+  <br>
+  Ingredientes
+</div>
